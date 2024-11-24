@@ -1,0 +1,9 @@
+<app-input-antigo label="cocota" botaoDesativado="false" />
+<div class="separator"></div>
+<app-input-novo
+  label="signal novo"
+  botaoDesativado="false"
+  [(valor)]="valorInputNovo"
+  (botaoClicado)="imprimir($event)"
+/>
+<p>{{ valorInputNovo }}</p>
